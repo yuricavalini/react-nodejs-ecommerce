@@ -7,11 +7,14 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "airbnb",
     "airbnb/hooks",
-    "prettier/airbnb",
-    "prettier/react",
-    "plugin:promise/recommended"
+    "plugin:promise/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -22,6 +25,7 @@
   },
   "plugins": [
     "react",
+    "jsx-a11y",
     "import",
     "import-helpers",
     "react-hooks",
@@ -30,6 +34,9 @@
   ],
   "rules": {
     "prettier/prettier": "error",
+    "arrow-body-style": "error",
+    "prefer-arrow-callback": "error",
+    "comma-dangle": "off",
     "space-before-function-paren": "off",
     "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [
@@ -63,7 +70,7 @@
         ],
         "alphabetize": {
           "order": "asc",
-          "ignoreCase": "true"
+          "ignoreCase": true
         }
       }
     ]
